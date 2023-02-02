@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>template</title>
+	<meta charset="UTF-8">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230203000109">
+
+	<!-- Remix Icons  -->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css?_v=20230203000109" rel="stylesheet">
+
+	<!-- Scroll Reveal  -->
+	<!-- <script src="https://unpkg.com/scrollreveal?_v=20230203000109"></script> -->
+
+	<!-- Swiper  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230203000109" />
+</head>
+
+<body data-barba="wrapper">
+	<div class="wrapper">
+		<div class="load-container">
+			<div class="loading-screen"></div>
+		</div>
+
+		<!-- Preloader ('html/_header.htm') -->
+		<header class="header">
+			<div class="header__container">
+				<div class="header__inner">
+					<a href="index.html" class="header__logo logo magic-hover">
+						<img src="img/logo.svg" alt="KBK" class="header-reavel">
+					</a>
+					<div class="header__right">
+						<nav class="nav">
+							<ul class="nav__links">
+								<li class="nav__item">
+									<a href="#" class="nav__link link link--metis magic-hover header-reavel">Acasă</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link link link--metis magic-hover header-reavel">Proiecte</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link link link--metis magic-hover header-reavel">Despre
+										noi</a>
+								</li>
+							</ul>
+							<a href="#" class="nav__contact magic-hover header-reavel">Contacte</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page" data-barba="container" data-barba-namespace="about-section">
+			<a href="index.html">HOMEEEE</a>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<hr class="footer__divider">
+				<div class="footer__inner">
+					<div class="footer__left">
+						<div class="footer__logo logo overlay">
+							<img src="img/logo.svg" alt="Logo">
+						</div>
+						<p class="footer__details overlay">
+							<span>
+								<i class="ri-map-2-line"></i>
+								Romania, Brașov, Str. Triumfului 6, 507015
+							</span>
+						</p>
+						<p class="footer__details overlay">
+							<span>
+								<i class="ri-mail-line"></i>
+								info@kbkprojekt.eu
+							</span>
+						</p>
+						<p class="footer__details overlay">
+							<span>
+								<i class="ri-phone-line"></i>
+								+40 368 466 446
+							</span>
+						</p>
+					</div>
+					<div class="footer__right">
+						<div class="footer__items">
+							<div class="footer__item">
+								<h2 class="footer__title overlay"><span>KBK Kraft Projekt</span></h2>
+								<div class="footer__links">
+									<a href="#" class="footer__subtitle overlay"><span>Despre noi</span></a>
+									<a href="#" class="footer__subtitle overlay"><span>KBK Projekt</span></a>
+									<a href="#" class="footer__subtitle overlay"><span>KBK Store</span></a>
+									<a href="#" class="footer__subtitle overlay"><span>KBK Tophaus</span></a>
+									<a href="#" class="footer__subtitle overlay"><span>KBK Projekt MD</span></a>
+								</div>
+							</div>
+							<div class="footer__item">
+								<h2 class="footer__title overlay"><span>Social Media</span></h2>
+								<div class="footer__links">
+									<a href="#" class="footer__subtitle overlay"><span>Instagram</span></a>
+									<a href="#" class="footer__subtitle overlay"><span>Facebook</span></a>
+									<a href="#" class="footer__subtitle overlay"><span>WhatsUp</span></a>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="footer__contact magic-hover"><span>Contact</span></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js?_v=20230203000109"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js?_v=20230203000109"></script>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js?_v=20230203000109"></script>
+<script src="https://unpkg.com/@barba/core?_v=20230203000109"></script> -->
+
+	<script src="https://cdn.jsdelivr.net/gh/codrops/ImageRevealHover/js/charming.min.js?_v=20230203000109"></script>
+	<script src="https://cdn.jsdelivr.net/gh/codrops/ImageRevealHover/js/imagesloaded.pkgd.min.js?_v=20230203000109"></script>
+	<script src="https://cdn.jsdelivr.net/gh/codrops/ImageRevealHover/js/TweenMax.min.js?_v=20230203000109"></script>
+	<script src="https://cdn.jsdelivr.net/gh/codrops/ImageRevealHover/js/demo.js?_v=20230203000109"></script>
+
+	<!-- Swiper  -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230203000109"></script>
+
+
+	<!-- Swup  -->
+	<script src="https://unpkg.com/swup@latest/dist/swup.min.js?_v=20230203000109"></script>
+	<script>
+		const swiper = new Swiper('.swiper--about', {
+			// Optional parameters
+			slidesPerView: 2.70,
+			direction: 'horizontal',
+			loop: true,
+			spaceBetween: 30,
+			effect: 'fade',
+
+			autoplay: {
+				delay: 2500,
+			},
+			breakpoints: {
+				// when window width is >= 320px
+			},
+			// If we need pagination
+			pagination: {},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+
+	<!-- <script>
+    function delay(n) {
+        n = n || 2000;
+        return new Promise((done) => {
+            setTimeout(() => {
+                done();
+            }, n);
+        });
+    }
+
+    function pageTransition() {
+        var tl = gsap.timeline();
+        tl.to(".loading-screen", {
+            duration: 1.2,
+            width: "100%",
+            left: "0%",
+            ease: "Expo.easeInOut",
+        });
+
+        tl.to(".loading-screen", {
+            duration: 1,
+            width: "100%",
+            left: "100%",
+            ease: "Expo.easeInOut",
+            delay: 0.3,
+        });
+        tl.set(".loading-screen", { left: "-100%" });
+    }
+
+    function contentAnimation() {
+        const tll = gsap.timeline({
+        });
+        tll.to(".preloader__img", {
+            ease: "power4.out",
+            duration: "1",
+            y: "0%",
+            stagger: {
+                amount: "0.3",
+            },
+        });
+
+        tll.to(".preloader__img", {
+            ease: "power4.out",
+            duration: "0.8",
+            y: "-105%",
+            stagger: {
+                amount: "0.3",
+            },
+        });
+
+        tll.to(".preloader", {
+            duration: "0.5",
+            backgroundColor: "transparent",
+            backdropFilter: "blur(0px)",
+        });
+
+        tll.to(".preloader", {
+            duration: "0.5",
+            opacity: "0",
+            display: "none",
+        });
+
+        tll.to(".hero__title--word", {
+            ease: "power4.out",
+            duration: "1.5",
+            delay: "-1",
+            y: "0%",
+            stagger: {
+                amount: "1",
+            },
+        });
+
+        tll.fromTo(".hero__subtitle", {
+            y: "100%",
+            opacity: "0",
+        },
+            {
+                ease: "power4.out",
+                duration: "1.2",
+                y: "0%",
+                opacity: "100%",
+                delay: "-1.5",
+                stagger: {
+                    amount: "1",
+                },
+            }
+        );
+
+        tll.fromTo(".hero__link", {
+            y: '100%',
+            opacity: "0",
+        },
+            {
+                ease: "power4.out",
+                duration: "0.2",
+                y: "0%",
+                opacity: "100%",
+                delay: "-1",
+                stagger: {
+                    amount: "0.5",
+                },
+            }
+        );
+
+        tll.fromTo(".hero__img", {
+            y: '-100%',
+        },
+            {
+                ease: "power4.out",
+                duration: "3",
+                y: "0%",
+                delay: "-2.5",
+                stagger: {
+                    amount: "0.5",
+                },
+            }
+        );
+    }
+
+    function otherAnimation() {
+
+    }
+
+    // $(function () {
+
+    //     barba.init({
+    //         sync: false,
+
+    //         transitions: [
+    //             {
+    //                 async leave(data) {
+    //                     const done = this.async();
+
+    //                     pageTransition();
+    //                     await delay(570);
+    //                     done();
+    //                 },
+
+    //                 // async enter(data) {
+    //                 //     contentAnimation();
+    //                 //     otherAnimation();
+    //                 // },
+
+    //                 // async once(data) {
+    //                 //     contentAnimation();
+    //                 //     otherAnimation();
+    //                 // },
+
+    //                 // // async once(data) {
+    //                 // //     otherAnimation();
+    //                 // // },
+
+    //                 // async beforeEnter(data) {
+    //                 //     killEvents();
+    //                 // },
+
+    //                 // async afterEnter(data) {
+    //                 //     contentAnimation();
+    //                 //     otherAnimation();
+    //                 // },
+    //             },
+    //         ],
+    //     });
+
+    // barba.hooks.enter(() => {
+
+    //     window.scrollTo(0, 0);
+
+    // });
+    // });
+</script> -->
+
+	<!-- <style>
+    .preloader {
+        display: none !important;
+    }
+</style> -->
+
+	<script>
+		const tll = gsap.timeline({});
+		tll.to(".preloader__img", {
+			delay: 0.3,
+			ease: "power4.out",
+			duration: "1",
+			y: "0%",
+			stagger: {
+				amount: "0.3",
+			},
+		});
+
+		tll.to(".preloader__img", {
+			ease: "power4.out",
+			duration: "0.8",
+			y: "-105%",
+			stagger: {
+				amount: "0.3",
+			},
+		});
+
+		tll.to(".preloader", {
+			duration: "0.5",
+			backgroundColor: "transparent",
+			backdropFilter: "blur(0px)",
+		});
+
+		tll.to(".preloader", {
+			duration: "0.5",
+			opacity: "0",
+			display: "none",
+		});
+
+		tll.to(".hero__title--word", {
+			ease: "power4.out",
+			duration: "1.5",
+			delay: "-1",
+			y: "0%",
+			stagger: {
+				amount: "1",
+			},
+		});
+
+		tll.fromTo(".hero__subtitle", {
+			y: "100%",
+			opacity: "0",
+		}, {
+			ease: "power4.out",
+			duration: "1.2",
+			y: "0%",
+			opacity: "100%",
+			delay: "-1.5",
+			stagger: {
+				amount: "1",
+			},
+		});
+
+		tll.fromTo(".hero__link--first", {
+			y: '100%',
+			opacity: "0",
+		}, {
+			ease: "power4.out",
+			duration: "0.2",
+			y: "0%",
+			opacity: "100%",
+			delay: "-1",
+			stagger: {
+				amount: "0.5",
+			},
+		});
+
+		tll.fromTo(".hero__img", {
+			y: '-100%',
+		}, {
+			ease: "power4.out",
+			duration: "3",
+			y: "0%",
+			delay: "-2.5",
+			stagger: {
+				amount: "0.5",
+			},
+		});
+	</script>
+
+	<script>
+		window.onload = function() {
+			gsap.to(".projects__divider", {
+				scrollTrigger: {
+					trigger: ".projects__divider",
+					start: "bottom 85%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				stagger: {
+					amount: "0.5",
+				},
+				duration: "1.6",
+				width: "100%",
+			});
+
+			gsap.to(".spoller__divider", {
+				scrollTrigger: {
+					trigger: ".spoller__divider",
+					start: "bottom 85%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				stagger: {
+					amount: "0.5",
+				},
+				duration: "0.8",
+				width: "100%",
+			});
+
+			gsap.to(".divider", {
+				scrollTrigger: {
+					trigger: ".divider",
+					start: "bottom 80%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				duration: "1.6",
+				width: "100%",
+			});
+
+			gsap.to(".project__name--overlay span, .project__area span, .project__year span", {
+				ease: "power4.out",
+				scrollTrigger: {
+					trigger: ".project__name--overlay span",
+					start: "bottom 80%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				stagger: {
+					amount: "1",
+				},
+				duration: "1",
+				y: "0%",
+			});
+			gsap.fromTo(".smalltitle--word", {
+				y: "100%",
+			}, {
+				scrollTrigger: {
+					trigger: ".smalltitle--word",
+					start: "bottom 80%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				ease: "power4.out",
+				duration: "1.5",
+				y: "0%",
+				stagger: {
+					amount: "1",
+				},
+			});
+
+			gsap.fromTo(".hero__subtitle--bottom", {
+				y: "100%",
+				opacity: "0",
+			}, {
+				scrollTrigger: {
+					trigger: ".hero__subtitle--bottom",
+					start: "bottom 80%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				ease: "power4.out",
+				duration: "1.5",
+				delay: "0.2",
+				y: "0%",
+				opacity: "100%",
+				stagger: {
+					amount: "1",
+				},
+			});
+
+			gsap.fromTo(".projects__smalltitle--word", {
+				y: "100%",
+			}, {
+				scrollTrigger: {
+					trigger: ".projects__smalltitle--word",
+					start: "bottom 80%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				ease: "power4.out",
+				duration: "1",
+				y: "0%",
+				stagger: {
+					amount: "0.3",
+				},
+			});
+
+			gsap.fromTo(".projects__header p, .projects__gallery span", {
+				y: "150%",
+			}, {
+				scrollTrigger: {
+					trigger: ".projects__smalltitle--word, .projects__gallery span",
+					start: "bottom 80%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				ease: "power4.out",
+				duration: "1",
+				y: "0%",
+				stagger: {
+					amount: "0.3",
+				},
+			});
+
+			gsap.fromTo(".hero__link--second", {
+				y: '100%',
+				opacity: "0",
+			}, {
+				scrollTrigger: {
+					trigger: ".hero__link--second",
+					start: "bottom 80%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				ease: "power4.out",
+				duration: "0.2",
+				y: "0%",
+				opacity: "100%",
+				stagger: {
+					amount: "0.5",
+				},
+			});
+
+			gsap.fromTo(".projects__stat-number span", {
+				y: '100%',
+			}, {
+				scrollTrigger: {
+					trigger: ".projects__stat-number span",
+					start: "top 85%",
+					// scrub: 1,
+					ease: "power4.out",
+				},
+				ease: "power4.out",
+				duration: "1.2",
+				y: "0%",
+				stagger: {
+					amount: "0.5",
+				},
+			});
+
+			gsap.fromTo(".projects__stat-details span", {
+				y: '-100%',
+			}, {
+				scrollTrigger: {
+					trigger: ".projects__stat-details span",
+					start: "bottom 80%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				delay: "0.7",
+				ease: "power4.out",
+				duration: "1.2",
+				y: "0%",
+				stagger: {
+					amount: "0.5",
+				},
+			});
+
+			gsap.fromTo(".gallery__img", {
+				y: '-200%',
+			}, {
+				scrollTrigger: {
+					trigger: ".gallery",
+					start: "top 85%",
+					// scrub: 1,
+					ease: "power4.out",
+				},
+				ease: "power4.out",
+				duration: "3",
+				y: "0%",
+				stagger: {
+					amount: "0.5",
+				},
+			});
+
+			gsap.fromTo(".questions__title span", {
+				y: "100%",
+			}, {
+				scrollTrigger: {
+					trigger: ".questions__title span",
+					start: "bottom 80%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				ease: "power4.out",
+				duration: "1",
+				y: "0%",
+				stagger: {
+					amount: "0.3",
+				},
+			});
+
+			gsap.fromTo(".spollers__title span", {
+				y: "200%",
+			}, {
+				scrollTrigger: {
+					trigger: ".spollers__title span",
+					start: "bottom 80%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				ease: "power4.out",
+				duration: "1",
+				y: "0%",
+				stagger: {
+					amount: "1",
+				},
+			});
+
+			gsap.fromTo(".partners__img", {
+				y: "100%",
+			}, {
+				scrollTrigger: {
+					trigger: ".partners",
+					start: "top 90%",
+					// scrub: 1,
+					ease: "power4.out",
+				},
+				ease: "power4.out",
+				duration: "2",
+				y: "0%",
+				stagger: {
+					amount: "0.7",
+				},
+			});
+
+			gsap.fromTo(".swiper-slide", {
+				opacity: "0",
+			}, {
+				scrollTrigger: {
+					trigger: ".swiper-slide",
+					start: "top 90%",
+					// scrub: 1,
+					ease: "power4.out",
+				},
+				ease: "power4.out",
+				duration: "2",
+				opacity: "100%",
+				stagger: {
+					amount: "0.7",
+				},
+			});
+
+			gsap.to(".footer__divider", {
+				scrollTrigger: {
+					trigger: ".footer__divider",
+					start: "bottom 95%",
+					// scrub: 1,
+					ease: "power4.out",
+				},
+				duration: "1.6",
+				width: "100%",
+			});
+
+			gsap.fromTo(".footer__logo img", {
+				y: "100%",
+			}, {
+				scrollTrigger: {
+					trigger: ".footer__logo img",
+					start: "bottom 95%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				ease: "power4.out",
+				duration: "1",
+				y: "0%",
+				stagger: {
+					amount: "1",
+				},
+			});
+
+			gsap.fromTo(".footer__details span", {
+				y: "100%",
+			}, {
+				scrollTrigger: {
+					trigger: ".footer__details",
+					start: "bottom 95%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				ease: "power4.out",
+				duration: "1",
+				y: "0%",
+				stagger: {
+					amount: "0.8",
+				},
+			});
+
+			gsap.fromTo(".footer__title span", {
+				y: "100%",
+			}, {
+				scrollTrigger: {
+					trigger: ".footer__title span",
+					start: "bottom 95%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				ease: "power4.out",
+				duration: "1",
+				y: "0%",
+				stagger: {
+					amount: "0.5",
+				},
+			});
+
+			gsap.fromTo(".footer__subtitle span", {
+				y: "100%",
+			}, {
+				scrollTrigger: {
+					trigger: ".footer__subtitle",
+					start: "bottom 95%",
+					// scrub: 1,
+					ease: "power4.out"
+				},
+				ease: "power4.out",
+				duration: "1",
+				y: "0%",
+				stagger: {
+					amount: "0.9",
+				},
+			});
+		}
+	</script>
+
+	<!-- <script>
+    ScrollReveal().reveal('.header-reavel', {
+        delay: 2000,
+        distance: '-30px',
+        interval: 200,
+        duration: 800,
+    });
+
+    ScrollReveal().reveal('.hero__img', {
+        delay: 2200,
+        distance: '-600px',
+        interval: 300,
+        duration: 3000,
+        // scale: 1.3,
+    });
+
+    ScrollReveal().reveal('.gallery__img', {
+        delay: 200,
+        distance: '-600px',
+        interval: 300,
+        duration: 3000,
+        // scale: 1.3,
+    });
+
+    ScrollReveal().reveal('.smalltitle--word', {
+        delay: 150,
+        distance: '50px',
+        interval: 50,
+        duration: 1150,
+        // scale: 1.3,
+    });
+
+    ScrollReveal().reveal('.hero__title--word, .hero__link, .hero__subtitle--gsap', {
+        delay: 2000,
+        distance: '50px',
+        interval: 100,
+        duration: 1000,
+    });
+
+    ScrollReveal().reveal('.preloader__img', {
+        delay: 150,
+        distance: '50px',
+        interval: 250,
+        duration: 1200,
+    });
+
+    ScrollReveal().reveal('.subtitle', {
+        delay: 700,
+        distance: '50px',
+        interval: 250,
+        duration: 1200,
+    });
+
+    ScrollReveal().reveal('.projects__smalltitle--word, .project__name--word, .projects__gallery', {
+        delay: 1000,
+        distance: '50px',
+        interval: 250,
+        duration: 1200,
+    });
+
+    ScrollReveal().reveal('.projects__stat-number span, .projects__stat-details span', {
+        delay: 1000,
+        distance: '50px',
+        interval: 250,
+        duration: 900,
+    });
+
+    ScrollReveal().reveal('.projects__info p, .projects__header p', {
+        delay: 900,
+        distance: '10px',
+        interval: 250,
+        duration: 1200,
+    });
+
+    ScrollReveal().reveal('.project__area, .project__year, .project__name--word', {
+        delay: 1000,
+        distance: '10px',
+        interval: 130,
+        duration: 900,
+    });
+
+    ScrollReveal().reveal('.questions__title span, .spollers__title span', {
+        delay: 500,
+        distance: '50px',
+        interval: 130,
+        duration: 900,
+    });
+</script> -->
+
+	<script src="js/app.min.js?_v=20230203000109"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<!-- <div class="popup__header">
+                <a data-close type="button" class="popup__close magic-hover"><i class="ri-close-line"></i></a>
+            </div> -->
+				<nav class="linktree__items">
+					<a href="" class="linktree__item linktree__item--purple magic-hover">
+						<div class="linktree__text">
+							<h2>instagram.</h2>
+							<p>instagram.com/ftvnty</p>
+						</div>
+						<i class="ri-arrow-right-line"></i>
+					</a>
+
+					<a href="" class="linktree__item magic-hover">
+						<div class="linktree__text">
+							<h2>telegram.</h2>
+							<p>t.me/lxquids</p>
+						</div>
+						<i class="ri-arrow-right-line"></i>
+					</a>
+
+					<a href="index.html" class="linktree__item magic-hover">
+						<div class="linktree__text">
+							<h2>website.</h2>
+							<p>ftwenty.com</p>
+						</div>
+						<i class="ri-arrow-right-line"></i>
+					</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div id="new" aria-hidden="false" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<a data-close type="button" class="popup__close magic-hover"><i class="ri-close-line"></i></a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<button class="back2top back2top--hidden magic-hover" onclick="scrollToTop()" id="backToTop">
+		<i class="ri-arrow-up-line"></i>
+	</button>
+
+	<script>
+		window.onscroll = () => {
+			toggleTopButton();
+		}
+
+		function scrollToTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
+		}
+
+		function toggleTopButton() {
+			if (document.body.scrollTop > 20 ||
+				document.documentElement.scrollTop > 20) {
+				document.getElementById('backToTop').classList.remove('back2top--hidden');
+			} else {
+				document.getElementById('backToTop').classList.add('back2top--hidden');
+			}
+		}
+	</script>
+	<!-- Cursor  -->
+	<!-- https://magicmousejs.web.app/ -->
+
+	<!-- scss/libs/cursor.scss  -->
+
+	<script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js?_v=20230203000109"></script>
+
+	<script type="text/javascript">
+		options = {
+			"cursorOuter": "disable",
+			"hoverEffect": "pointer-overlay",
+			"hoverItemMove": false,
+			"defaultCursor": false,
+			"outerWidth": 41,
+			"outerHeight": 41
+		};
+		magicMouse(options);
+	</script>
+</body>
+
+</html>
